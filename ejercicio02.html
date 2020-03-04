@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        a :nth-child(1) {
+            width: 30px;
+            height: 70px;
+            background: deeppink;
+            margin-right: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        a :nth-child(2) {
+            position: relative;
+            z-index: 1;
+            transform: translateX(-440px);
+            animation-name: smooth-title;
+            animation-duration: 0.8s;
+            animation-timing-function:  ease-in-out;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+        @keyframes smooth-title {
+            0% {
+                transform: translateX(-440px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a>
+            <div></div>
+            <div>Área de Desarrollo - La Agencia</div>
+        </a>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</body>
+</html>
