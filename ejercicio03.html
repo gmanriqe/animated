@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tinted-image {
+            width: 500px;
+            height: 300px;
+            
+            background-image: 
+                linear-gradient(
+                    0deg, 
+                    rgba(0,0,0,1) 20%, 
+                    rgba(255,255,255,0) 50%, 
+                    rgba(252,252,252,0) 100%
+                ),
+                url('img/e_background.jpg');
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            /* para texto */
+            font-size: 36px;
+            color: #FFF;
+
+            /* para distribuir elemento */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="tinted-image">
+        Elefante
+    </div>
+</body>
+</html>
